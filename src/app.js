@@ -64,7 +64,7 @@ app.get("/weather", (req, res) => {
                         longitude,
                         (
                             forecastError,
-                            { overview, currentTemp, feelslike } = {}
+                            { overview, icon, currentTemp, feelslike } = {}
                         ) => {
                             if (forecastError) {
                                 res.send({
@@ -74,6 +74,7 @@ app.get("/weather", (req, res) => {
                                 res.send({
                                     place,
                                     overview,
+                                    icon,
                                     currentTemp,
                                     feelslike,
                                 });

@@ -23,9 +23,10 @@ weatherForm.addEventListener("submit", (e) => {
                 forecastData.innerHTML = `<strong>Location:</strong> <i>${data.place}</i>`;
                 forecastData.innerHTML += "<br/>";
                 forecastData.innerHTML += "<br/>";
-                forecastData.innerHTML += `${data.overview}. The current temperature is ${data.currentTemp}&#176;C, it feels like ${data.feelslike}&#176;C`;
+                forecastData.innerHTML += `${data.overview} <img src='${data.icon}' style="position:relative; top: 25px" alt='weather icon'><br/><br/>`;
+                forecastData.innerHTML += `The current temperature is ${data.currentTemp}&#176;C, it feels like ${data.feelslike}&#176;C`;
                 forecastData.style.fontFamily = "Arial";
-                forecastData.style.fontSize = "20px";
+                forecastData.style.fontSize = "22px";
             }
         });
     });

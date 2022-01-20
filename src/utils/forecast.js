@@ -22,6 +22,7 @@ const forecast = (lat, long, callback) => {
             // of information about current weather
             callback(undefined, {
                 overview: body.current.condition.text,
+                icon: body.current.condition.icon,
                 currentTemp: body.current.temp_c,
                 feelslike: body.current.feelslike_c,
             });

@@ -2,7 +2,6 @@ const request = require("postman-request");
 
 const geocode = (address, callback) => {
     // the url to access the geolocation api
-    // don't upload your api key on github
     const urlGeo =
         "https://api.mapbox.com/geocoding/v5/mapbox.places/" +
         encodeURIComponent(address.toLowerCase()) +
