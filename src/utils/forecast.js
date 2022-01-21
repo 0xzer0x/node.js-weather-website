@@ -2,7 +2,6 @@ const request = require("postman-request");
 
 const forecast = (lat, long, callback) => {
     // url to access the weather api using coordinates
-    // Don't upload to github with api key
     const urlWeather =
         "http://api.weatherapi.com/v1/current.json?key=d10780316c0040c5a6c160654221201&q=" +
         lat +
